@@ -31,6 +31,8 @@ playerSelection == "scissors" && computerSelection == "paper" || playerSelection
     }
 
     function game(){
+        playerScore = 0
+        computerScore = 0
         for(let i = 0; i < 5 ; i++){
             playRound("rock", computerSelection);
             computerSelection = getComputerChoice();
